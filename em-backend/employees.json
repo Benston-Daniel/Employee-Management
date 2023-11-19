@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Clara",
+    "age": 28,
+    "dob": "1995-02-20",
+    "salary": 55000,
+    "department": "Finance"
+  },
+  {
+    "id": 2,
+    "name": "Bob vance",
+    "age": 35,
+    "dob": "1988-09-10",
+    "salary": 70000,
+    "department": "Marketing"
+  },
+  {
+    "id": 3,
+    "name": "Gilda",
+    "age": 32,
+    "dob": "1990-12-05",
+    "salary": 50000,
+    "department": "HR"
+  },
+  {
+    "id": 4,
+    "name": "Benston",
+    "age": 22,
+    "dob": "2001-12-05",
+    "salary": 50000,
+    "department": "IT"
+  },
+  {
+    "id": 5,
+    "name": "Nevin",
+    "age": 24,
+    "dob": "2000-12-05",
+    "salary": 80000,
+    "department": "IT"
+  },
+  {
+    "id": 6,
+    "name": "Jubal",
+    "age": 45,
+    "dob": "1978-12-05",
+    "salary": 80000,
+    "department": "IT"
+  },
+  {
+    "name": "Bennet",
+    "age": "28",
+    "dob": "1997-04-10",
+    "salary": "40000",
+    "department": "HR",
+    "id": "7"
+  }
+]
