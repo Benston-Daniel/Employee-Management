@@ -5,16 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Management Application</title>
-    <!-- Link to Tailwind CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Link to Font Awesome CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Link to style.css file -->
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Add this style to hide the form initially */
         .hidden {
             display: none;
         }
@@ -23,14 +19,14 @@
 </head>
 
 <body>
-    <!-- Navigation bar -->
+    <!--Navigation-->
     <nav class="flex items-center justify-between bg-gray-800 p-4">
         <div class="text-white font-bold text-xl">Employee Management Application</div>
         <div class="flex space-x-4">
             <a href="#" id="showAllEmployeesLink" class="text-white hover:bg-gray-700 px-2 py-1 rounded">Show all Employees</a>
             <div class="relative inline-block">
                 <a href="#" id="filterEmployeesLink" class="text-white hover:bg-gray-700 px-2 py-1 rounded">Filter Employees</a>
-                <!-- Multilevel dropdown menu -->
+                <!--dropdown-->
                 <div id="filterDropdown" class="hidden absolute z-50 bg-white rounded-md shadow-lg mt-2">
                     <ul>
                         <li>
@@ -45,7 +41,7 @@
                         <li>
                             <a href="#" id="salaryFilter">Salary</a>
                             <ul id="salaryOptions" class="hidden">
-                                <li><a href="#" data-filter="50000">Greater than 50000</a></li>
+                                <li><a href="#" data-filter="50000">> 50000</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -56,7 +52,6 @@
         </div>
     </nav>
 
-    <!-- Input form -->
     <div class="container mx-auto mt-4 p-4" id="formContainer">
         <h1 class="text-2xl font-bold mb-4">Add a new Employee</h1>
         <form class="grid grid-cols-2 gap-4" id="employeeForm">
@@ -81,7 +76,6 @@
                 <input type="text" id="department" name="department" class="border border-gray-300 p-2 rounded">
             </div>
             <div class="flex items-end justify-end">
-                <!-- Change the submit button line to include the script.js file -->
                 <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
             </div>
         </form>
@@ -89,10 +83,10 @@
 
     <div class="container mx-auto mt-4 p-4 hidden" id="tableContainer">
         <h1 class="text-2xl font-bold mb-4">Employee List</h1>
-        <table id="employeeTable" class="min-w-full bg-white border border-gray-300">
-            <!-- Table headers -->
+        <table id="employeeTable" class="min-w-full bg-white border border-gray-300 shadow-lg">
             <thead>
                 <tr>
+                    <th class="border px-4 py-2">ID</th>
                     <th class="border px-4 py-2">Full Name</th>
                     <th class="border px-4 py-2">Age</th>
                     <th class="border px-4 py-2">Date of Birth</th>
@@ -100,11 +94,10 @@
                     <th class="border px-4 py-2">Department</th>
                 </tr>
             </thead>
-            <!-- Table body will be populated dynamically using JavaScript -->
             <tbody></tbody>
         </table>
 
-        <!-- Average Salary dropdown -->
+        <!--Average dropdown-->
         <div class="container mx-auto mt-4 p-4">
             <h1 class="text-2xl font-bold mb-4">Average Salary</h1>
             <div class="flex flex-col">
@@ -120,12 +113,10 @@
             </div>
         </div>
     </div>
-    <!-- Footer -->
     <div class="footer bg-gray-800 text-white text-center">
         <p>Employee Management Application</p>
         <p>&copy; Benston Daniel</p>
         <div class="social-icons">
-            <!-- Social icons go here -->
         </div>
     </div>
     <script src="script.js"></script>
