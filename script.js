@@ -101,11 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (filteredEmployees.length > 0) {
                 filteredEmployees.forEach((employee) => {
                     const row = tableBody.insertRow();
-                    row.insertCell(0).textContent = employee.name;
-                    row.insertCell(1).textContent = employee.age;
-                    row.insertCell(2).textContent = employee.dob;
-                    row.insertCell(3).textContent = employee.salary;
-                    row.insertCell(4).textContent = employee.department;
+                    row.insertCell(0).textContent = employee.id;
+                    row.insertCell(1).textContent = employee.name;
+                    row.insertCell(3).textContent = employee.age;
+                    row.insertCell(4).textContent = employee.dob;
+                    row.insertCell(5).textContent = employee.salary;
+                    row.insertCell(6).textContent = employee.department;
                 });
             } else {
                 const row = tableBody.insertRow();
@@ -200,11 +201,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         filteredEmployees.forEach((employee) => {
                             const row = tableBody.insertRow();
-                            row.insertCell(0).textContent = employee.name;
-                            row.insertCell(1).textContent = employee.age;
-                            row.insertCell(2).textContent = employee.dob;
-                            row.insertCell(3).textContent = employee.salary;
-                            row.insertCell(4).textContent = employee.department;
+                            row.insertCell(0).textContent = employee.id;
+                            row.insertCell(1).textContent = employee.name;
+                            row.insertCell(2).textContent = employee.age;
+                            row.insertCell(3).textContent = employee.dob;
+                            row.insertCell(4).textContent = employee.salary;
+                            row.insertCell(5).textContent = employee.department;
                         });
                     }
                 })
