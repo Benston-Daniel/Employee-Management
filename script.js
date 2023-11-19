@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiUrl = "http://localhost:3000/employees";
+    const apiUrl = "https://employee-management-benston2.onrender.com/employees";
 
     function calculateAverageSalary(department) {
         fetch(apiUrl)
