@@ -102,16 +102,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 filteredEmployees.forEach((employee) => {
                     const row = tableBody.insertRow();
                     row.insertCell(0).textContent = employee.id;
-                    row.insertCell(0).textContent = employee.name;
-                    row.insertCell(1).textContent = employee.age;
-                    row.insertCell(2).textContent = employee.dob;
-                    row.insertCell(3).textContent = employee.salary;
-                    row.insertCell(4).textContent = employee.department;
+                    row.insertCell(1).textContent = employee.name;
+                    row.insertCell(2).textContent = employee.age;
+                    row.insertCell(3).textContent = employee.dob;
+                    row.insertCell(4).textContent = employee.salary;
+                    row.insertCell(5).textContent = employee.department;
                 });
             } else {
                 const row = tableBody.insertRow();
                 const cell = row.insertCell(0);
-                cell.colSpan = 5;
+                cell.colSpan = 6;
                 cell.textContent = "No employees match the filter criteria.";
             }
         }
