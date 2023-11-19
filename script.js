@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (filteredEmployees.length > 0) {
                 filteredEmployees.forEach((employee) => {
                     const row = tableBody.insertRow();
-                    //row.insertCell(0).textContent = employee.id;
+                    row.insertCell(0).textContent = employee.id;
                     row.insertCell(0).textContent = employee.name;
                     row.insertCell(1).textContent = employee.age;
                     row.insertCell(2).textContent = employee.dob;
