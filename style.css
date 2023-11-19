@@ -1,15 +1,12 @@
-/* Import Tailwind CSS and Bootstrap */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-/* Change the background color to a solid light color */
 body {
   background-color: #f0f4f8;
 }
 
-/* Add a logo image to the navigation bar */
 .navbar-brand {
   height: 50px;
 }
@@ -19,13 +16,11 @@ body {
   object-fit: contain;
 }
 
-/* Add some custom styles to the input form */
 .form-container {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-  /* Add a box shadow to the form container */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-color: white;
 }
@@ -33,7 +28,6 @@ body {
 .form-container h1 {
   text-align: center;
   font-weight: bold;
-  /* Change the text color to a darker shade */
   color: #374151;
 }
 
@@ -56,13 +50,11 @@ body {
   border-radius: 5px;
 }
 
-/* Add some custom styles to the table */
 .table-container {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-  /* Add a box shadow to the table container */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-color: white;
 }
@@ -70,7 +62,6 @@ body {
 .table-container h2 {
   text-align: center;
   font-weight: bold;
-  /* Change the text color to a darker shade */
   color: #374151;
 }
 
@@ -99,7 +90,6 @@ body {
   background-color: #e2e8f0;
 }
 
-/* Add some custom styles to the dropdown menu */
 .dropdown-menu {
   min-width: 200px;
 }
@@ -115,7 +105,6 @@ body {
   background-color: #e2e8f0;
 }
 
-/* Add some custom styles to the footer */
 .footer {
   padding: 20px;
   background-color: #374151;
@@ -143,3 +132,37 @@ body {
   margin: 0 10px;
   object-fit: contain;
 }
+
+
+#filterDropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#filterDropdown ul li {
+  position: relative;
+}
+
+#filterDropdown a {
+  display: block;
+  padding: 10px;
+  color: #374151;
+  text-decoration: none;
+}
+
+#filterDropdown a:hover {
+  background-color: #e2e8f0;
+}
+
+#filterDropdown ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+
+#filterDropdown ul li:hover > ul {
+  display: block;
+}
+
