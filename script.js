@@ -13,7 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(apiUrl)
             .then((response) => response.json())
             .then((employees) => {
-                const departmentEmployees = employees.filter(employee => employee.department === department);
+                let departmentEmployees;
+                if(department === "All"){
+                    departmentEmployees = employees;
+                }
+                else{
+                   departmentEmployees = employees.filter(employee => employee.department === department);
+                }
                 const totalSalary = departmentEmployees.reduce((sum, employee) => sum + parseInt(employee.salary), 0);
                 const averageSalary = totalSalary / departmentEmployees.length;
 
