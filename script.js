@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const apiUrl = "https://employee-management-benston2.onrender.com/employees";
+    const alertMessage = "Kindly wait for a few seconds for JSON to load from the Backend";
+    alert(alertMessage);
 
+    setTimeout(() => {
+        const alertContainer = document.querySelector(".alert");
+        if (alertContainer) {
+            alertContainer.style.display = "none";
+        }
+    }, 8000);
     function calculateAverageSalary(department) {
         fetch(apiUrl)
             .then((response) => response.json())
@@ -277,4 +285,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    const alertContainer = document.createElement("div");
+    alertContainer.classList.add("alert", "bg-blue-500", "text-white", "text-center", "p-4", "fixed", "top-0", "left-0", "right-0");
+    alertContainer.textContent = alertMessage;
+    document.body.appendChild(alertContainer);
 });
