@@ -5,12 +5,12 @@ const cors = require('cors');
 
 const app = express();
 const port = 3000;
-// const corsOptions = {
-//     origin: 'D:\Student_FE\TryHard\index.html', // Replace with your actual frontend domain
-//     optionsSuccessStatus: 204, // Some legacy browsers choke on 204
-// };
+const corsOptions = {
+    origin: 'https://benston-daniel.github.io/Employee-Management/', 
+    optionsSuccessStatus: 204, 
+};
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.get('/employees', async (req, res) => {
     try {
