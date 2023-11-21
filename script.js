@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const apiUrl = "https://employee-management-benston2.onrender.com/employees";
-    const alertMessage = "Kindly wait for a few seconds for JSON to load from the Backend";
+    const alertMessage = "Please wait a few seconds for JSON data to load from the backend";
     alert(alertMessage);
 
     setTimeout(() => {
