@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (alertContainer) {
             alertContainer.style.display = "none";
         }
-    }, 8000);
+    }, 15000);
     function calculateAverageSalary(department) {
         fetch(apiUrl)
             .then((response) => response.json())
